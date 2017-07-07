@@ -95,6 +95,11 @@ public class MainController {
         return "index";
     }
 
+    @GetMapping("/rest")
+    public String rest(){
+        return "rest";
+    }
+
 
 }
 

@@ -1,3 +1,4 @@
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@include file="templates/header.jsp" %>
 
 <sec:authorize access="isAuthenticated()">

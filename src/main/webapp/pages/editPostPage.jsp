@@ -8,19 +8,17 @@
 
     <select name="blogID" id="">
         <c:forEach items="${blogs}" var="blog">
-            <c:if test="${blog.id == emptyPost.blog.id}">
-                <option value="${blog.id}">${blog.blogTitle}</option>
-            </c:if>
-            <c:if test="${blog.id != emptyPost.blog.id}">
-                <option value="${blog.id}">${blog.blogTitle}</option>
-            </c:if>
+            <option
+                    <c:if test="${blog.id == emptyPost.blog.id}"> selected </c:if>
+                    value="${blog.id} ">
+                    ${blog.blogTitle}
+            </option>
 
         </c:forEach>
     </select>
     <input type="submit" value="updatePost">
 
 </form>
-
 
 
 </body>
